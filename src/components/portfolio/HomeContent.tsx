@@ -352,7 +352,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                         >
                             {/* Bio */}
                             <div className="p-6 rounded-2xl border border-cyan-500/20 bg-black/40 backdrop-blur-sm">
-                                <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-4">
+                                <p className="text-white/75 text-base leading-relaxed mb-4">
                                     Desenvolvedor Full Stack com <span className="text-cyan-400 font-bold">app mobile em produção</span> na Play Store e App Store.
                                     Construí do zero uma rede social mobile completa com sistema de monetização, backend robusto, cache Redis, armazenamento AWS S3 e integração com IA.
                                 </p>
@@ -360,7 +360,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                                     Minha jornada começou no <span className="text-yellow-400 font-bold">Exército Brasileiro</span>, onde desenvolvi liderança, resiliência e disciplina liderando equipes de até 12 pessoas. Hoje aplico essa mentalidade no desenvolvimento de software: <span className="text-cyan-400 font-bold">entregar resultados completos</span>, do banco de dados às lojas de aplicativos.
                                 </p>
                                 <p className="text-white/75 text-base leading-relaxed">
-                                    Atualmente desenvolvendo aplicações web fullstack na <span className="text-yellow-400 font-bold">UPDA Technologies</span> e cursando Tecnologia da Informação na UNINOVE. Busco minha primeira oportunidade para crescer em um time de alto nível.
+                                    Atualmente desenvolvendo aplicações web fullstack na <span className="text-yellow-400 font-bold">UPDA Technologies</span> e cursando Tecnologia da Informação na UNINOVE.
                                 </p>
                             </div>
 
