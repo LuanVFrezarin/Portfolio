@@ -233,10 +233,18 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.5 }}
                             >
-                                <div className="flex items-center justify-center gap-2 text-cyan-400">
-                                    <ArrowDown className="w-6 h-6 animate-bounce" />
-                                    <span className="text-sm font-bold tracking-widest">INICIAR SISTEMA</span>
-                                </div>
+                                <button
+                                    onClick={() => {
+                                        const aboutSection = document.getElementById('about')
+                                        if (aboutSection) {
+                                            aboutSection.scrollIntoView({ behavior: 'smooth' })
+                                        }
+                                    }}
+                                    className="flex items-center justify-center gap-2 text-cyan-400 hover:text-yellow-400 transition-colors cursor-pointer group"
+                                >
+                                    <ArrowDown className="w-6 h-6 animate-bounce group-hover:text-yellow-400" />
+                                    <span className="text-sm font-bold tracking-widest group-hover:text-yellow-400">INICIAR SISTEMA</span>
+                                </button>
                             </motion.div>
                         </div>
                     </motion.div>
