@@ -232,12 +232,13 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                                 initial={{ y: 30, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.5 }}
+                                className="flex justify-center"
                             >
                                 <button
                                     onClick={() => {
-                                        const aboutSection = document.getElementById('about')
-                                        if (aboutSection) {
-                                            aboutSection.scrollIntoView({ behavior: 'smooth' })
+                                        const featuredSection = document.getElementById('featured')
+                                        if (featuredSection) {
+                                            featuredSection.scrollIntoView({ behavior: 'smooth' })
                                         }
                                     }}
                                     className="flex items-center justify-center gap-2 text-cyan-400 hover:text-yellow-400 transition-colors cursor-pointer group"
