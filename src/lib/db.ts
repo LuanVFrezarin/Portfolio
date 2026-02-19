@@ -18,6 +18,6 @@ export const db = new Proxy({} as PrismaClient, {
     if (!process.env.DATABASE_URL) {
       throw new Error('DATABASE_URL não configurada')
     }
-    return (getDb() as Record<string | symbol, unknown>)[prop]
+    return (getDb() as unknown as Record<string | symbol, unknown>)[prop]
   },
 })
