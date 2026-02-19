@@ -493,12 +493,42 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                     </div>
 
                     <div className="max-w-4xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {/* Email */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {/* WhatsApp */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
+                                className="group"
+                            >
+                                <motion.a
+                                    href="https://wa.me/5511913471500"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block p-6 rounded-xl bg-gradient-to-br from-black/80 to-black/60 backdrop-blur-md border-2 border-cyan-500/30 hover:border-cyan-400 transition-all"
+                                    whileHover={{ scale: 1.05, y: -5 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <div className="flex flex-col items-center text-center">
+                                        <motion.div
+                                            className="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center mb-4"
+                                            whileHover={{ rotate: 360 }}
+                                            transition={{ duration: 0.6 }}
+                                        >
+                                            <span className="text-cyan-400 font-bold text-xl">💬</span>
+                                        </motion.div>
+                                        <h3 className="text-lg font-bold text-white mb-2">WhatsApp</h3>
+                                        <p className="text-cyan-300 text-sm">(11) 91347-1500</p>
+                                    </div>
+                                </motion.a>
+                            </motion.div>
+
+                            {/* Email */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.1 }}
                                 viewport={{ once: true }}
                                 className="group"
                             >
@@ -526,7 +556,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.1 }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
                                 viewport={{ once: true }}
                                 className="group"
                             >
@@ -556,7 +586,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.2 }}
+                                transition={{ duration: 0.5, delay: 0.3 }}
                                 viewport={{ once: true }}
                                 className="group"
                             >
@@ -587,7 +617,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                         <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.3 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
                             viewport={{ once: true }}
                             className="text-center mt-12"
                         >
