@@ -232,7 +232,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
                                 initial={{ y: 30, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.5 }}
-                                className="flex justify-center"
+                                className="w-full flex justify-center"
                             >
                                 <button
                                     onClick={() => {
@@ -253,7 +253,7 @@ export function HomeContent({ initialProjects, categories }: HomeContentProps) {
             </section>
 
             {/* ══ FEATURED PROJECT (cai com rotação sobre o Hero) ══ */}
-            <section className="falling-featured">
+            <section id="featured" className="falling-featured">
                 <div className="falling-container bg-black">
                     <FeaturedProject />
                 </div>
