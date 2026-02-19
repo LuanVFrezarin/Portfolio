@@ -1,0 +1,64 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+nul
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# claude / ai tools
+.claude
+.z-ai-config
+/skills/
+dev.log
+server.log
+local-*
+test
+prompt
+
+# arquivos pessoais / temporários
+*.rar
+*.zip
+*.docx
+/pics_ehoje/
+/animacao-rolada-pagina-caindo-main/
+/.zscripts/
+/db/
+/examples/
+/mini-services/
+/projects/
+bun.lock
+Caddyfile
